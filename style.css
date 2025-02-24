@@ -1,3 +1,8 @@
+* {
+  margin: 0px;
+  padding: 0px  ;
+}
+
 body {
     background-image: url("bg2.jpg");
     background-color: rgb(245, 240, 240);
@@ -23,15 +28,13 @@ div {
     width: 60%;
 }
 
-@media (max-width: 800px) {
-    width: 90%;
-}
-
 header {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 50px;
     width: 100%;
+    display: flex;
+    flex-direction: row;
 }
 
 img {
@@ -57,7 +60,7 @@ img:hover {
     width: 70%;
   }
   
-  @media (max-width: 800px) {
+  @media (max-width: 1650px) {
     .flex-container {
       flex-direction: column;
       width: 100%;
@@ -69,7 +72,6 @@ img:hover {
     flex-direction: column;
     text-align: center;
     margin-top: 30px;
-    width: 100%;
 }
 
 .itemt {
@@ -93,9 +95,11 @@ img:hover {
 }
 
 footer {
-    text-align: center;
-    width: 80%;
-    background-color: gainsboro;
-    margin-top: 100px;
-    padding-bottom: 50px;
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(211, 216, 219);
 }
