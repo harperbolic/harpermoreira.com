@@ -39,8 +39,15 @@ header {
 }
 
 header hr {
-margin-top: 20px;
-margin-bottom: 0px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+@media (max-width: 361px) {
+
+  div {
+    width: auto;
+  }
 }
 
 article {
@@ -65,16 +72,11 @@ article {
     margin-left: 4%;
     margin-right: 4%;
   }
-
-  article h1 {
-    text-align: center;
-    margin-left: 0px;
-  }
 }
 
 article h1 {
   font-size: 50px;
-  margin-left: 38px;
+  text-align: center;
 }
 
 article a{
@@ -86,6 +88,8 @@ article a{
 article img {
   margin-top: 40px;
   margin-bottom: 30px;
+  border: 6px double black;
+  box-shadow: 10px 10px #8f8079
 }
 
 .first-row {
@@ -95,6 +99,8 @@ article img {
 audio {
   margin-top: 40px;
   margin-bottom: 30px;
+  border: 6px double black;
+  box-shadow: 7px 7px #8f8079
 }
 
 .links {
@@ -105,15 +111,25 @@ audio {
 }
 
 button {
-  background-color: #555555;
+  background-color: #ffffff;
   border: none;
-  color: white;
+  color: rgb(0, 0, 0);
   padding: 15px 32px;
   text-align: center;
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+  border: 6px double black;
+  box-shadow: 5px 5px #8f8079;
+  margin-left: 20px;
+}
+
+@media (max-width: 612px) {
+
+  .links {
+    flex-direction: column;
+  }
 }
 
 hr {
