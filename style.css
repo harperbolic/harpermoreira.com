@@ -3,40 +3,46 @@
   padding: 0px;
   text-decoration: none;
   color: black;
+  font-family: "Monomakh", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 500;
 }
 
 body {
     background-image: url("bg2.jpg");
     background-color: rgb(245, 240, 240);
+    padding-top: 160px;
   }
 
   h1 {
-    font-family: "Roboto", serif;
-    font-optical-sizing: auto;
     font-weight: 800;
-    font-style: normal;
     margin-bottom: 0px;
   }
 
-  .subt {
-    font-family: "Roboto", serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-  }
+.subl {
+  font-size: 17px;
+}
 
 div {
     margin: auto;
-    width: 60%;
+    width: 70%;
 }
 
 header {
     text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 30px;
     width: 100%;
     display: flex;
     flex-direction: row;
+    position: fixed;
+    top:0;
+    left: 0;
+    background-color: rgb(245, 240, 240);
+}
+
+header hr {
+  margin-top: 20px;
 }
 
 img {
@@ -59,14 +65,7 @@ img:hover {
 .flex-container {
     display: flex;
     flex-direction: row;
-    width: 70%;
-  }
-  
-  @media (max-width: 1650px) {
-    .flex-container {
-      flex-direction: column;
-      width: 100%;
-    }
+    flex-wrap: wrap;
   }
 
 .flex-item {
@@ -74,10 +73,10 @@ img:hover {
     flex-direction: column;
     text-align: center;
     margin-top: 30px;
+    width: auto;
 }
 
 .itemt {
-    font-family: "Roboto", serif;
     font-optical-sizing: auto;
     font-weight: 900;
     font-style: normal;
@@ -87,21 +86,24 @@ img:hover {
 }
 
 .items {
-    font-family: "Roboto", serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    text-size-adjust: 100%;
     font-size: 15px;
     padding: 0px;
+    font-family: "Roboto", serif;
+    font-size: 15px;
+}
+
+.separator {
+  align-items: center;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 footer {
   text-align: center;
-  margin-top: 30px;
-  padding-top: 70px;
   padding-bottom: 70px;
   display: flex;
   flex-direction: column;
-  background-color: rgb(211, 216, 219);
 }
