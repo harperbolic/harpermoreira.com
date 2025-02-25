@@ -52,10 +52,6 @@ img {
     width: 350px;
   }
 
-img:hover {
-    opacity: 0.8;
-}
-
 @media (max-width: 800px) {
     img {
       width: 80%;
